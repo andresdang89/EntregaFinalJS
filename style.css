@@ -1,0 +1,192 @@
+.card.products-container{
+    margin: 5vh auto;
+}
+.card-products{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.card-products img{
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+}
+.card-products button{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: rgb(243, 237, 237);
+    background-color: rgb(32, 31, 31);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.card-products button:hover {
+    opacity: 0.7;
+}
+.cart-btn{
+    position: fixed;
+    top: 90vh;
+    right: 40px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    height: 24px;
+    transition: trasform 0.2s ease-in-out;
+}
+
+.cart-btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-overlay{
+    display: none;
+    background-color: rgba(29, 28, 28, 0.863);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.modal-container{
+    display: none;
+    background-color: rgba(245, 245, 236, 0.966);
+    box-shadow: 0px 3px 6px rgba(24, 23, 23, 0.616);
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+.modal-close{
+    float: right;
+    cursor: pointer;
+}
+.modal-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.modal-body{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+ .product-img{
+    height: 80px;
+    margin-right: 20px;
+    width: 80px;
+} 
+.product-info{
+    flex: 1;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.product-info h4{
+    margin-top: 35px;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 4em;
+}
+.quantity-btn-decrese,
+.quantity-btn-increse{
+    color: rgb(18, 18, 19);
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    font-weight: bold;
+
+}
+.quantity-imput{
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+    padding:  10px;
+    text-align: center;
+    width: 50px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px){
+    .product-img{
+        display: none;
+
+    }
+    .modal-body{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.delete-product{
+    margin-top: 20px;
+    margin-left: 2em;
+    cursor: pointer;
+}
+.modal-footer{
+    text-align: center;
+}
+.total-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.cart-counter{
+    display: none;
+    position: fixed;
+    top: 89vh;
+    right: 27px;
+    color: rgb(53, 54, 54);
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    padding: 4px;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+    font-size: 15px;
+}
+

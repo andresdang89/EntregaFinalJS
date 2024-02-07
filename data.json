@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "productName": "Anillo esmeralda",
+        "price": 1000,
+        "quanty": 1,
+        "img": "./assets/Images/anillo-esmeralda-diamantes.avif"
+        
+    },
+    {
+        "id": 1,
+        "productName": "Aretes esmeraldas",
+        "price": 800,
+        "quanty": 1,
+        "img": "./assets/Images/Aretes.diamantes.webp"
+        
+    },
+    {
+        "id": 1,
+        "productName": "Pulsera esmeraldas",
+        "price": 1700,
+        "quanty": 1,
+        "img": "/assets/Images/white.webp"
+        
+    }
+]
